@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "288F96C7-6F19-4E9A-8670-327F18DCC8BB"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "582289A1-EAE5-4F8D-B89D-FFFD32C22FED"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "InspiringQuotes/Quotes_Helpler.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "5"
+            endingLineNumber = "5"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E8E035C0-F295-4407-BFBA-0407F0B37140"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "InspiringQuotes/ListQuotesViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1"
+            endingLineNumber = "1"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3E511426-AB79-4266-8164-E9178C6B82C9"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "InspiringQuotes/AuthorSpecificTableCellTableViewCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "11"
+            endingLineNumber = "11"
+            landmarkName = "AuthorSpecificTableCellTableViewCell"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "3E511426-AB79-4266-8164-E9178C6B82C9 - 99fbff13c4baad6b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "InspiringQuotes.AuthorSpecificTableCellTableViewCell.quotes.getter : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "InspiringQuotes"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bipinmsb/IOS/InspiringQuotes/InspiringQuotes/AuthorSpecificTableCellTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "85">
+               </Location>
+               <Location
+                  uuid = "3E511426-AB79-4266-8164-E9178C6B82C9 - 94992dfe15761573"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "InspiringQuotes.AuthorSpecificTableCellTableViewCell.quotes.setter : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "InspiringQuotes"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bipinmsb/IOS/InspiringQuotes/InspiringQuotes/AuthorSpecificTableCellTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "136">
+               </Location>
+               <Location
+                  uuid = "3E511426-AB79-4266-8164-E9178C6B82C9 - acecc44ac3e1ea5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "InspiringQuotes.AuthorSpecificTableCellTableViewCell.quotes.modify : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "InspiringQuotes"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bipinmsb/IOS/InspiringQuotes/InspiringQuotes/AuthorSpecificTableCellTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "52">
+               </Location>
+               <Location
+                  uuid = "3E511426-AB79-4266-8164-E9178C6B82C9 - 68eb65a4f32f31d3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "InspiringQuotes.AuthorSpecificTableCellTableViewCell.quotes.modify : Swift.Optional&lt;__C.UILabel&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "InspiringQuotes"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bipinmsb/IOS/InspiringQuotes/InspiringQuotes/AuthorSpecificTableCellTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "26">
+               </Location>
+               <Location
+                  uuid = "3E511426-AB79-4266-8164-E9178C6B82C9 - 51c28220b045f205"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "InspiringQuotes.AuthorSpecificTableCellTableViewCell.init(style: __C.UITableViewCellStyle, reuseIdentifier: Swift.Optional&lt;Swift.String&gt;) -&gt; InspiringQuotes.AuthorSpecificTableCellTableViewCell"
+                  moduleName = "InspiringQuotes"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bipinmsb/IOS/InspiringQuotes/InspiringQuotes/AuthorSpecificTableCellTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "121">
+               </Location>
+               <Location
+                  uuid = "3E511426-AB79-4266-8164-E9178C6B82C9 - 4887b7e573708767"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "InspiringQuotes.AuthorSpecificTableCellTableViewCell.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;InspiringQuotes.AuthorSpecificTableCellTableViewCell&gt;"
+                  moduleName = "InspiringQuotes"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bipinmsb/IOS/InspiringQuotes/InspiringQuotes/AuthorSpecificTableCellTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "78">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

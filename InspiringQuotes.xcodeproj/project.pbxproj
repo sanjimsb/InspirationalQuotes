@@ -9,21 +9,41 @@
 /* Begin PBXBuildFile section */
 		7C0306B6288E454000071801 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0306B5288E454000071801 /* AppDelegate.swift */; };
 		7C0306B8288E454000071801 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0306B7288E454000071801 /* SceneDelegate.swift */; };
-		7C0306BA288E454000071801 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0306B9288E454000071801 /* ViewController.swift */; };
+		7C0306BA288E454000071801 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0306B9288E454000071801 /* MainViewController.swift */; };
 		7C0306BD288E454000071801 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C0306BB288E454000071801 /* Main.storyboard */; };
 		7C0306BF288E454200071801 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C0306BE288E454200071801 /* Assets.xcassets */; };
 		7C0306C2288E454200071801 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C0306C0288E454200071801 /* LaunchScreen.storyboard */; };
+		7C0306CA288E45A100071801 /* Quotes_Helpler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0306C9288E45A100071801 /* Quotes_Helpler.swift */; };
+		7C2AA7AE28A93BDA00783E19 /* ListQuotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C2AA7AD28A93BDA00783E19 /* ListQuotesViewController.swift */; };
+		7C2AA7B028A93C1E00783E19 /* ListAuthorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C2AA7AF28A93C1E00783E19 /* ListAuthorsViewController.swift */; };
+		7C2AA7B628A9514500783E19 /* InspiringQuotes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7C2AA7B428A9514500783E19 /* InspiringQuotes.xcdatamodeld */; };
+		7C2AA7B828A9553600783E19 /* QuotesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C2AA7B728A9553600783E19 /* QuotesModel.swift */; };
+		7C2AA7BA28A97AE800783E19 /* QuotesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C2AA7B928A97AE800783E19 /* QuotesTableViewCell.swift */; };
+		7C2AA7BC28A9899400783E19 /* AuthorsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C2AA7BB28A9899400783E19 /* AuthorsTableViewCell.swift */; };
+		7C2AA7BE28A993F700783E19 /* ListAuthorSingleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C2AA7BD28A993F700783E19 /* ListAuthorSingleViewController.swift */; };
+		7C2AA7C028A99B7C00783E19 /* AuthorSpecificTableCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C2AA7BF28A99B7C00783E19 /* AuthorSpecificTableCellTableViewCell.swift */; };
+		7CC1BABE28ABF5C5001F3E5C /* ListFavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC1BABD28ABF5C5001F3E5C /* ListFavViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7C0306B2288E454000071801 /* InspiringQuotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InspiringQuotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C0306B5288E454000071801 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7C0306B7288E454000071801 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7C0306B9288E454000071801 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7C0306B9288E454000071801 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		7C0306BC288E454000071801 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7C0306BE288E454200071801 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7C0306C1288E454200071801 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7C0306C3288E454200071801 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C0306C9288E45A100071801 /* Quotes_Helpler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quotes_Helpler.swift; sourceTree = "<group>"; };
+		7C2AA7AD28A93BDA00783E19 /* ListQuotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListQuotesViewController.swift; sourceTree = "<group>"; };
+		7C2AA7AF28A93C1E00783E19 /* ListAuthorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListAuthorsViewController.swift; sourceTree = "<group>"; };
+		7C2AA7B528A9514500783E19 /* InspiringQuotes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = InspiringQuotes.xcdatamodel; sourceTree = "<group>"; };
+		7C2AA7B728A9553600783E19 /* QuotesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesModel.swift; sourceTree = "<group>"; };
+		7C2AA7B928A97AE800783E19 /* QuotesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesTableViewCell.swift; sourceTree = "<group>"; };
+		7C2AA7BB28A9899400783E19 /* AuthorsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorsTableViewCell.swift; sourceTree = "<group>"; };
+		7C2AA7BD28A993F700783E19 /* ListAuthorSingleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListAuthorSingleViewController.swift; sourceTree = "<group>"; };
+		7C2AA7BF28A99B7C00783E19 /* AuthorSpecificTableCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorSpecificTableCellTableViewCell.swift; sourceTree = "<group>"; };
+		7CC1BABD28ABF5C5001F3E5C /* ListFavViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListFavViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +78,21 @@
 			children = (
 				7C0306B5288E454000071801 /* AppDelegate.swift */,
 				7C0306B7288E454000071801 /* SceneDelegate.swift */,
-				7C0306B9288E454000071801 /* ViewController.swift */,
+				7C0306B9288E454000071801 /* MainViewController.swift */,
+				7C2AA7AF28A93C1E00783E19 /* ListAuthorsViewController.swift */,
+				7C2AA7BD28A993F700783E19 /* ListAuthorSingleViewController.swift */,
+				7CC1BABD28ABF5C5001F3E5C /* ListFavViewController.swift */,
+				7C2AA7AD28A93BDA00783E19 /* ListQuotesViewController.swift */,
 				7C0306BB288E454000071801 /* Main.storyboard */,
 				7C0306BE288E454200071801 /* Assets.xcassets */,
 				7C0306C0288E454200071801 /* LaunchScreen.storyboard */,
+				7C0306C9288E45A100071801 /* Quotes_Helpler.swift */,
+				7C2AA7B728A9553600783E19 /* QuotesModel.swift */,
+				7C2AA7B928A97AE800783E19 /* QuotesTableViewCell.swift */,
+				7C2AA7BB28A9899400783E19 /* AuthorsTableViewCell.swift */,
+				7C2AA7BF28A99B7C00783E19 /* AuthorSpecificTableCellTableViewCell.swift */,
 				7C0306C3288E454200071801 /* Info.plist */,
+				7C2AA7B428A9514500783E19 /* InspiringQuotes.xcdatamodeld */,
 			);
 			path = InspiringQuotes;
 			sourceTree = "<group>";
@@ -138,9 +168,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7C0306BA288E454000071801 /* ViewController.swift in Sources */,
+				7C2AA7BC28A9899400783E19 /* AuthorsTableViewCell.swift in Sources */,
+				7CC1BABE28ABF5C5001F3E5C /* ListFavViewController.swift in Sources */,
+				7C0306BA288E454000071801 /* MainViewController.swift in Sources */,
 				7C0306B6288E454000071801 /* AppDelegate.swift in Sources */,
 				7C0306B8288E454000071801 /* SceneDelegate.swift in Sources */,
+				7C2AA7AE28A93BDA00783E19 /* ListQuotesViewController.swift in Sources */,
+				7C2AA7C028A99B7C00783E19 /* AuthorSpecificTableCellTableViewCell.swift in Sources */,
+				7C2AA7B628A9514500783E19 /* InspiringQuotes.xcdatamodeld in Sources */,
+				7C2AA7BA28A97AE800783E19 /* QuotesTableViewCell.swift in Sources */,
+				7C0306CA288E45A100071801 /* Quotes_Helpler.swift in Sources */,
+				7C2AA7B828A9553600783E19 /* QuotesModel.swift in Sources */,
+				7C2AA7BE28A993F700783E19 /* ListAuthorSingleViewController.swift in Sources */,
+				7C2AA7B028A93C1E00783E19 /* ListAuthorsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,6 +336,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -323,6 +364,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -358,6 +400,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7C2AA7B428A9514500783E19 /* InspiringQuotes.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7C2AA7B528A9514500783E19 /* InspiringQuotes.xcdatamodel */,
+			);
+			currentVersion = 7C2AA7B528A9514500783E19 /* InspiringQuotes.xcdatamodel */;
+			path = InspiringQuotes.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 7C0306AA288E454000071801 /* Project object */;
 }
