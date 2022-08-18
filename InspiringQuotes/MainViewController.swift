@@ -63,6 +63,7 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
         let request : NSFetchRequest<FavQuotes> = FavQuotes.fetchRequest()
         let moc = container.viewContext
         
+        
         guard let results = try? moc.fetch(request) else { return }
         self.getResults = results
         randomQuotesTable.reloadData()
@@ -86,10 +87,17 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
         cell.getAuthor = randomQuotes[indexPath.row].author
         cell.getId = randomQuotes[indexPath.row]._id
         cell.getContent = randomQuotes[indexPath.row].content
+
         cell.container = container
         
         if getResults.contains(where: {fav in fav.id == randomQuotes[indexPath.row]._id}) {
             cell.favImage.tintColor = .red
+            for result in getResults {
+                if result.id == randomQuotes[indexPath.row]._id {
+                    cell.quoteObject = result
+                    
+                }
+            }
         } else {
             cell.favImage.tintColor = .systemBlue
         }

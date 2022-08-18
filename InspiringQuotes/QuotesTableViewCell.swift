@@ -13,6 +13,7 @@ class QuotesTableViewCell: UITableViewCell {
     var getId : String = ""
     var getAuthor : String = ""
     var getContent : String = ""
+    var quoteObject : NSManagedObject = NSManagedObject()
     
     @IBOutlet weak var favContent: UILabel!
     
@@ -54,7 +55,15 @@ class QuotesTableViewCell: UITableViewCell {
         } else {
             favImage.tintColor.setFill()
             favImage.tintColor = .systemBlue
-            print("gesture action")
+            let moc = container.viewContext
+            moc.perform {
+                do {
+                    moc.delete(self.quoteObject)
+                    try moc.save()
+                } catch {
+                    moc.rollback()
+                }
+            }
         }
     }
     

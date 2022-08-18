@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import CoreData
 
 class ListAuthorSingleViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
@@ -15,6 +16,8 @@ class ListAuthorSingleViewController: UIViewController, UITableViewDataSource, U
     var getSelectedAuthorSlug : String = ""
     var getBio : String = ""
     var getDescription : String = ""
+    var container: NSPersistentContainer! = (UIApplication.shared.delegate as! AppDelegate).persistentContainer
+    var getResults : [FavQuotes] = []
     @IBOutlet weak var authorName: UILabel!
     @IBOutlet weak var authorBio: UITextView!
     @IBOutlet weak var authorBioHC: NSLayoutConstraint!
@@ -24,6 +27,7 @@ class ListAuthorSingleViewController: UIViewController, UITableViewDataSource, U
     @IBOutlet weak var AuthorSpecificQuotesTable: UITableView!
     
     @IBOutlet weak var authorContentHC: NSLayoutConstraint!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Authors"
@@ -31,11 +35,22 @@ class ListAuthorSingleViewController: UIViewController, UITableViewDataSource, U
         AuthorSpecificQuotesTable.dataSource = self
         Task{
             do {
+                print(self.getSelectedAuthorSlug)
                 self.getQuotes = try await Get_Quotes.fetchQuoteByAuthor(getAuthor: self.getSelectedAuthorSlug)
+                print(getQuotes)
+                //fetch from fav list
+                let request : NSFetchRequest<FavQuotes> = FavQuotes.fetchRequest()
+                let moc = container.viewContext
+
+                guard let results = try? moc.fetch(request) else { return }
+                self.getResults = results
+                AuthorSpecificQuotesTable.reloadData()
             } catch let error{
                 print(error)
             }
         }
+        
+        
         authorName.text = getSelectedAuthor
         authorBio.text = getBio
         authorBioHC.constant = self.authorBio.contentSize.height
@@ -48,6 +63,13 @@ class ListAuthorSingleViewController: UIViewController, UITableViewDataSource, U
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        //fetch from fav list
+        let request : NSFetchRequest<FavQuotes> = FavQuotes.fetchRequest()
+        let moc = container.viewContext
+        
+        
+        guard let results = try? moc.fetch(request) else { return }
+        self.getResults = results
         AuthorSpecificQuotesTable.reloadData()
     }
     
@@ -67,6 +89,22 @@ class ListAuthorSingleViewController: UIViewController, UITableViewDataSource, U
         let cell = tableView.dequeueReusableCell(withIdentifier: "quotesCell", for: indexPath) as! AuthorSpecificTableCellTableViewCell
         cell.quotes.numberOfLines = 0
         cell.quotes.text = getQuotes[indexPath.row].content
+        cell.getAuthor = getQuotes[indexPath.row].author
+        cell.getId = getQuotes[indexPath.row]._id
+        cell.getContent = getQuotes[indexPath.row].content
+        cell.container = container
+        
+        if getResults.contains(where: {fav in fav.id == getQuotes[indexPath.row]._id}) {
+            cell.favImage.tintColor = .red
+            for result in getResults {
+                if result.id == getQuotes[indexPath.row]._id {
+                    cell.quoteObject = result
+                }
+            }
+        } else {
+            cell.favImage.tintColor = .systemBlue
+        }
+        
         return cell
     }
 

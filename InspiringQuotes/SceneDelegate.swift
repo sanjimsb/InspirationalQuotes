@@ -32,16 +32,18 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             
             let tvc =  navController.topViewController
             
-            
             switch tvc {
                 case is MainViewController:
                     (tvc as! MainViewController).container = persistentContainer
                 case is ListFavViewController:
                     (tvc as! ListFavViewController).container = persistentContainer
+                case is ListAuthorSingleViewController:
+                    (tvc as! ListAuthorSingleViewController).container = persistentContainer
 
                 default:
                     continue
             }
+            
         }
     }
 

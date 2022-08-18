@@ -32,7 +32,7 @@ class Get_Quotes {
     }
     
     static func fetchQuoteByAuthor(getAuthor: String) async throws -> [QuotesData] {
-        let request = URLRequest(url: URL(string: baseUrl + "?author" + getAuthor)!)
+        let request = URLRequest(url: URL(string: baseUrl + "?author=" + getAuthor + "&limit=100")!)
         let (data, _) = try await session.data(for: request)
         
         let decoder = JSONDecoder()
