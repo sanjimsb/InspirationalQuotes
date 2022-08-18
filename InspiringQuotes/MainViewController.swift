@@ -13,11 +13,14 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
     var randomQuotes : [QuotesData] = []
     var container: NSPersistentContainer!
     var getRandomQuote : QuotesData = QuotesData(_id: "", content: "", author: "")
+    var getResults : [FavQuotes] = []
+    
     @IBOutlet weak var featuredAuthor: UILabel!
     @IBOutlet weak var featuredQuote: UITextView!
     
     @IBOutlet weak var randomQuotesTable: UITableView!
     
+    @IBOutlet weak var favImage: UIImageView!
     
     
     override func viewDidLoad() {
@@ -32,7 +35,15 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
             do {
                 self.randomQuotes = try await Get_Quotes.fetchQuoteList()
                 self.getRandomQuote = self.randomQuotes.randomElement()!
-           
+                
+                //fetch from fav list
+                let request : NSFetchRequest<FavQuotes> = FavQuotes.fetchRequest()
+                let moc = container.viewContext
+                
+                guard let results = try? moc.fetch(request) else { return }
+                self.getResults = results
+               
+                
                 featuredAuthor.text = getRandomQuote.author
                 featuredQuote.text = getRandomQuote.content
                 self.randomQuotesTable.reloadData()
@@ -48,6 +59,12 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        //fetch from fav list
+        let request : NSFetchRequest<FavQuotes> = FavQuotes.fetchRequest()
+        let moc = container.viewContext
+        
+        guard let results = try? moc.fetch(request) else { return }
+        self.getResults = results
         randomQuotesTable.reloadData()
     }
     
@@ -70,7 +87,18 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
         cell.getId = randomQuotes[indexPath.row]._id
         cell.getContent = randomQuotes[indexPath.row].content
         cell.container = container
+        
+        if getResults.contains(where: {fav in fav.id == randomQuotes[indexPath.row]._id}) {
+            cell.favImage.tintColor = .red
+        } else {
+            cell.favImage.tintColor = .systemBlue
+        }
+        
         return cell
+    }
+    
+    func setFav(_ isFav: Bool) {
+       
     }
    
 
