@@ -10,7 +10,7 @@ import UIKit
 
 class Get_Quotes {
     private static let baseUrl = "https://api.quotable.io/quotes"
-    private static let endpointQuoteList = URL(string: "https://api.quotable.io/quotes?limit=100")!
+    private static let endpointQuoteList = URL(string: "https://api.quotable.io/quotes?limit=400")!
     private static let endpointAuthors = URL(string: "https://api.quotable.io/authors?limit=100")!
     // other tags will also be used
     private static let endpointTagSpecific = URL(string: "https://api.quotable.io/random?tags=technology")
